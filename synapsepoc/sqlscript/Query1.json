@@ -1,0 +1,17 @@
+{
+	"name": "Query1",
+	"properties": {
+		"content": {
+			"query": "SELECT \no.customeridname\n, o.estimatedclosedate\n, o.name\n, o.description\n, o.stepname\n, o.emailaddress\n, o.parentcontactidname\n, o.closeprobability\n, t.total_amount\n FROM [dataverse_salestrial_unq3d4075f3478b43c8b0ce820555ec9].[dbo].[opportunity] o\n INNER JOIN [NYC].[dbo].[NYCTripSmall] t ON o.opportunityratingcode = t.payment_type",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dataverse_salestrial_unq3d4075f3478b43c8b0ce820555ec9",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
